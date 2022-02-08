@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchBar({ onSearch }) {
+function SearchBar(props) {
   // acá va tu código
   return (
     <>

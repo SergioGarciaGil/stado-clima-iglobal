@@ -1,21 +1,19 @@
 import React from "react";
 
-export default function Card(name, min, max, onClose, img) {
-  // acá va tu código
-
+export default function Card({ name, min, max, onClose, img }) {
   return (
     <>
-      <h1>Card Component</h1>
-      {/* <h1>{name}</h1>
-      <label>Min</label>
+      <h1>{name}</h1>
+      <label>Volor temperatura minima</label>
       <h3>{min}°</h3>
-      <label>Max</label>
+      <label>Valor temperatura max</label>
       <h3>{max}°</h3>
       <img
         src={`http://openweathermap.org/img/wn/${img}@2x.png`}
-        alt="logo clima" */}
+        alt="logo clima"
+      />
 
-      {/* <button onClick={onClose}>X</button> */}
+      <button onClick={onClose}>X</button>
     </>
   );
 }
