@@ -1,0 +1,46 @@
+.contenedor {
+  border: 1px rgb(83, 73, 73) solid;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 170px;
+  align-items: center;
+  position: relative;
+  padding-top: 15px;
+}
+
+.infoCont {
+  display: flex;
+  justify-content: space-between;
+  margin-right: -10px;
+}
+.infoCont h3 {
+  font-size: 25px;
+  margin-left: 15px;
+  /* margin-right: 5px; */
+  padding-top: 5px;
+}
+.infoCont img {
+  /* background-color: rgb(212, 204, 204);
+  border-radius: 50%;
+  width: 70px; */
+  position: relative;
+  left: 10px;
+}
+.btn {
+  height: min-content;
+  width: min-content;
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+  background-color: rgb(255, 115, 0);
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:hover {
+  color: green;
+  transform: scale(1.15);
+  transition: 0.5s;
+}

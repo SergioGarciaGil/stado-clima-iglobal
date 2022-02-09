@@ -1,19 +1,32 @@
 import React from "react";
+import estilos from "./Card.module.css";
 
 export default function Card({ name, min, max, onClose, img }) {
   return (
     <>
-      <h1>{name}</h1>
-      <label>Volor temperatura minima</label>
-      <h3>{min}°</h3>
-      <label>Valor temperatura max</label>
-      <h3>{max}°</h3>
-      <img
-        src={`http://openweathermap.org/img/wn/${img}@2x.png`}
-        alt="logo clima"
-      />
+      <div className={estilos.contenedor}>
+        <button onClick={onClose} className={estilos.btn}>
+          X
+        </button>
 
-      <button onClick={onClose}>X</button>
+        <h1>{name}</h1>
+
+        <div className={estilos.infoCont}>
+          <div>
+            <label>Min</label>
+            <h3>{min}°</h3>
+          </div>
+          <div>
+            <label>Max</label>
+            <h3>{max}°</h3>
+          </div>
+
+          <img
+            src={`http://openweathermap.org/img/wn/${img}@2x.png`}
+            alt="logo clima"
+          />
+        </div>
+      </div>
     </>
   );
 }
